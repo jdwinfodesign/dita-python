@@ -44,15 +44,18 @@ def walkFiles(inDir):
 ##           print()
 
     for dirpath, dirnames, filenames in os.walk(inDir):
-       for dirname in dirnames:
-           print('----------------------------------------')
-           print('dirname: ' + dirname)
-           for filename in filenames:
-               print('      dirpath:   ' + dirpath)
-               print('     dirnames:   ' + str(dirnames))
-               print('    filenames:   ' + str(filenames))
-               print('    filename:   ' + str(filename))
-               print('')
+        print('----------------------------------------')
+        print('    dirpath:  ' + dirpath)
+        print('   dirnames:  ' + str(dirnames))
+        print('  filenames:  ' + str(filenames))
+        
+##        for dirname in dirnames:
+##           print('   dirname:  ' + dirname)
+##           for filename in filenames:
+##               print('  dirnames:   ' + str(dirnames))
+##               print(' filenames:   ' + str(filenames))
+##               print('  filename:  ' + str(filename))
+##               print('')
 
 
 #---------------------------------------------------------------------

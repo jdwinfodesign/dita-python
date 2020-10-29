@@ -16,6 +16,7 @@ def listSubs(inDir):
     p = Path(inDir)
     # adjust the path here for how deep to go
     # '*' lists child folders only
+    # Uses paths and wildcards: '*/*/*'
     for a in p.glob('*'):
         if a.is_dir():
             print(a)
